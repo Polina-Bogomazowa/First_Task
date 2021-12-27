@@ -4,8 +4,14 @@ public class Mobile extends Single{
     private String name = "SubwaySurfers";
     private int score = 20000;
 
-    public Mobile() {
+    public Mobile(String name, int score) {
+
         super(name, score);
+    }
+    public Mobile() {
+        super();
+
+
     }
 
 

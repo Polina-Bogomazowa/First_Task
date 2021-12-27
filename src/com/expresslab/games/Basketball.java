@@ -4,10 +4,15 @@ public class Basketball extends Team{
     private String name = "basketball";
     private int score = 43;
 
-    public Basketball(String name, int thirdScore) {
-        super(name, thirdScore);
-    }
 
+    public Basketball(String name, int score) {
+        super(name, score);
+    }
+    public Basketball() {
+        super();
+
+
+    }
 
     public void setName(String nameValue) {
         this.name = nameValue;

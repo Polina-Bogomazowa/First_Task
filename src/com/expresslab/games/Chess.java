@@ -4,10 +4,14 @@ public class Chess extends Single{
     private String name = "chess";
     private int score = 16;
 
-    public Chess() {
+    public Chess(String name, int score) {
         super(name, score);
     }
+    public Chess() {
+        super();
 
+
+    }
 
     public void setName(String nameValue) {
         this.name = nameValue;

@@ -8,5 +8,10 @@ public class Single extends Game{
 public String play(){
 
     return ("single games are cool");
+
+}
+public Single(){
+    super();
+
 }
 }

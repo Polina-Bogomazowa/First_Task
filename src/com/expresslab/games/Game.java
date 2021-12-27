@@ -1,13 +1,15 @@
 package com.expresslab.games;
 
-abstract class Game {
+public abstract class Game {
     private String name ;
     public int firstScore = 30;
     public int secondScore = 40;
     private int thirdScore ;
     public String specialClothes = "" ;
 
+public Game(){
 
+}
     public Game(String name,int thirdScore ){
         this.name = name;
         this.thirdScore=thirdScore;

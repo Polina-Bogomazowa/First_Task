@@ -4,8 +4,13 @@ public class Football extends Team{
     private String name = "football";
     private int score = 2;
 
-    public Football() {
+    public Football(String name, int score) {
         super(name, score);
+    }
+    public Football() {
+        super();
+
+
     }
 
 
