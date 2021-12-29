@@ -1,6 +1,7 @@
 package com.expresslab;
 
 import com.expresslab.games.*;
+import com.expresslab.human.Girl;
 import com.expresslab.human.Man;
 import com.expresslab.human.Person;
 import com.expresslab.human.Woman;
@@ -48,10 +49,15 @@ public class Executor {
         man.play();
         man.say();
 
+        Girl aaa = new Girl();
+        aaa.showTheGirl();
+
+        Girl aa = new Girl();
+        aa.showThePlanets();
 
         Fighting fighting = new Fighting();
-        fighting.printInfo();
-        fighting.printInfo();
+        fighting.printInform("i like tacos");
+        fighting.printInfo("2023");
 
 
 
