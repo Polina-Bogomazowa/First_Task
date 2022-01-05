@@ -7,7 +7,7 @@ public class Chess extends Single{
     public Chess(String name, int score) {
         super(name, score);
     }
-    public Chess() {
+    public Chess(String s) {
         super();
 
 

@@ -1,6 +1,6 @@
 package com.expresslab.games;
 
-public class Single extends Game{
+ public abstract class Single extends Game{
 
     public Single(String name,int thirdScore){
         super (name,thirdScore);

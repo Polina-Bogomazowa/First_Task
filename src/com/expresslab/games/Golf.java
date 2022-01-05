@@ -8,7 +8,7 @@ public class Golf extends Single {
 
         super(name,score);
     }
-    public Golf() {
+    public Golf(String a_game_with_a_ball) {
         super();
 
 

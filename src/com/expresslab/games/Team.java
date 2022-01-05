@@ -1,6 +1,5 @@
 package com.expresslab.games;
-
-public class Team extends Game{
+public abstract class Team extends Game{
     public Team(String name,int thirdScore){
         super (name,thirdScore);
 

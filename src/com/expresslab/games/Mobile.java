@@ -8,7 +8,7 @@ public class Mobile extends Single{
 
         super(name, score);
     }
-    public Mobile() {
+    public Mobile(String jumping) {
         super();
 
 

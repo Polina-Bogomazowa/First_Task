@@ -6,6 +6,7 @@ import com.expresslab.human.Man;
 import com.expresslab.human.Person;
 import com.expresslab.human.Woman;
 import com.expresslab.stadium.Fighting;
+import com.expresslab.stadium.Stadium;
 
 public class Executor {
     public static void main(String []args){
@@ -60,6 +61,24 @@ public class Executor {
         fighting.printInfo("2023");
 
 
+        Game single1 = new Mobile("Jumping");
+        Game single2 = new Golf("a game with a ball");
+        Game single3 = new Chess("The Queen's Gambit");
+
+
+        Stadium<Single, Game> stadium1;
+        stadium1.setTeam(single1);
+        stadium1.setTeam(single2);
+        stadium1.setTeam(single3);
+
+        stadium1.printListNameGames();
+
+
+        Stadium stadium1 = new Stadium();
+
+        stadium1.setSingle(single1);
+        stadium1.setSingle(single2);
+        stadium1.setSingle(single3);
 
 
 
