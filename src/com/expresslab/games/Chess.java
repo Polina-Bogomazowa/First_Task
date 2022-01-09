@@ -13,6 +13,10 @@ public class Chess extends Single{
 
     }
 
+    public Chess() {
+
+    }
+
     public void setName(String nameValue) {
         this.name = nameValue;
     }

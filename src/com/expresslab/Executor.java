@@ -1,5 +1,6 @@
 package com.expresslab;
 
+import com.expresslab.exceptions.MyException;
 import com.expresslab.games.*;
 import com.expresslab.human.Girl;
 import com.expresslab.human.Man;
@@ -8,19 +9,49 @@ import com.expresslab.human.Woman;
 import com.expresslab.stadium.Fighting;
 import com.expresslab.stadium.Stadium;
 
+import java.util.Scanner;
+
 public class Executor {
     public static void main(String []args){
+
+        try{
+            System.out.println("this is from try");
+            throw new MyException();
+        }
+        catch(Exception e){
+            System.out.println("it's from catch");
+
+        }
+        finally {
+            System.out.println("its finally");
+        }
+
+
+        try {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Enter the score of the first game");
+            int a = scanner.nextInt();
+            System.out.println("Enter the score of the second game");
+            int b = scanner.nextInt();
+            System.out.println("Final score is (sum) = "+ (a+b));
+        }catch (Exception e){
+            System.out.println("incorrect value of score");
+        }finally {
+            System.out.println("In any case the game finished.Next game will be tomorrow");
+        }
+            Golf golf = new Golf();
+            golf.ResultOfScore();
 
         // Game game1 = new Game();
         // Game game2 = new Game();
         // Game game3 = new Game();
 
-        Game game4 = new Team("Basketball",401);
-        Game game5 = new Single("Gofl",400);
-        game4.printPlay();
-        game5.printPlay();
+        //Game game4 = new Team("Basketball",401);
+        //Game game5 = new Single("Gofl",400);
+        //game4.printPlay();
+        //game5.printPlay();
 
-        Mobile mobile = new Mobile();
+         /*Mobile mobile = new Mobile();
         System.out.println("Mobile " + mobile.getScore() + " " + mobile.getName() );
 
         Chess chess = new Chess();
@@ -61,17 +92,15 @@ public class Executor {
         fighting.printInfo("2023");
 
 
-        Game single1 = new Mobile("Jumping");
-        Game single2 = new Golf("a game with a ball");
-        Game single3 = new Chess("The Queen's Gambit");
+        Single single1 = new Mobile("Jumping");
+        Single single2 = new Golf("mini-golf",23);
+        Single single3 = new Chess("Netflix_chess");
+        single1.setName("jumping");
+        single2.setName("mini-golf");
+        single3.setName("chessss");
 
 
-        Stadium<Single, Game> stadium1;
-        stadium1.setTeam(single1);
-        stadium1.setTeam(single2);
-        stadium1.setTeam(single3);
 
-        stadium1.printListNameGames();
 
 
         Stadium stadium1 = new Stadium();
@@ -79,6 +108,7 @@ public class Executor {
         stadium1.setSingle(single1);
         stadium1.setSingle(single2);
         stadium1.setSingle(single3);
+        stadium1.printListNameGamesSingle();
 
 
 
@@ -100,5 +130,7 @@ public class Executor {
             System.out.println("Uniform for  " + game2.getName() + " is " + game2.getSpecialClothes() );*/
 
     }
+
+
 }
 

@@ -14,6 +14,10 @@ public class Mobile extends Single{
 
     }
 
+    public Mobile() {
+
+    }
+
 
     public void setName(String nameValue) {
         this.name = nameValue;
